@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud de demo | AgriDron Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-card auth-card--large">
+        <div class="auth-brand">
+          <div class="logo-mark" aria-hidden="true">
+            <span class="leaf leaf-1"></span>
+            <span class="leaf leaf-2"></span>
+            <span class="leaf leaf-3"></span>
+            <span class="leaf leaf-4"></span>
+            <span class="center-dot"></span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">AgriDron</span>
+            <span class="brand-sub">Solutions</span>
+          </div>
+        </div>
+
+        <h1>Solicita una demo</h1>
+        <p>Cuéntanos tu caso de uso y te ayudaremos a ver cómo podemos ayudarte.</p>
+
+        <form class="auth-form" novalidate>
+          <div class="auth-field">
+            <label for="name">Nombre completo</label>
+            <input id="name" name="name" type="text" placeholder="Tu nombre" />
+          </div>
+
+          <div class="auth-field">
+            <label for="company">Empresa</label>
+            <input id="company" name="company" type="text" placeholder="Nombre de tu empresa" />
+          </div>
+
+          <div class="auth-field">
+            <label for="register-email">Correo electrónico</label>
+            <input id="register-email" name="email" type="email" placeholder="you@example.com" aria-invalid="false" aria-describedby="register-email-error" />
+            <span id="register-email-error" class="field-error" aria-live="polite"></span>
+          </div>
+
+          <div class="auth-field">
+            <label for="phone">Teléfono</label>
+            <input id="phone" name="phone" type="tel" placeholder="+51 123 456 789" />
+          </div>
+
+          <button type="submit" class="auth-button">Solicitar acceso</button>
+        </form>
+
+        <div class="auth-footer">
+          Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="confirmation-modal" id="confirmation-modal" aria-hidden="true">
+      <div class="confirmation-backdrop" data-close-modal></div>
+      <section class="confirmation-dialog" role="dialog" aria-modal="true" aria-labelledby="confirmation-title">
+        <div class="confirmation-icon" aria-hidden="true">✓</div>
+        <h2 id="confirmation-title">Solicitud recibida</h2>
+        <p>Gracias por tu interés. Nuestro equipo revisará tus datos y se pondrá en contacto contigo pronto.</p>
+        <div class="confirmation-actions">
+          <a class="confirmation-button confirmation-button--primary" href="login.html">Volver al login</a>
+          <a class="confirmation-button confirmation-button--secondary" href="index.html">Ir al inicio</a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const registerForm = document.querySelector('.auth-form');
+      const emailInput = document.getElementById('register-email');
+      const emailError = document.getElementById('register-email-error');
+      const confirmationModal = document.getElementById('confirmation-modal');
+      const requiredFields = [
+        document.getElementById('name'),
+        document.getElementById('company'),
+        document.getElementById('phone')
+      ];
+
+      function validateEmail(value) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+      }
+
+      registerForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const emailValue = emailInput.value;
+        const isValid = validateEmail(emailValue);
+
+        const firstEmptyField = requiredFields.find((field) => field.value.trim() === '');
+
+        if (firstEmptyField) {
+          firstEmptyField.focus();
+          return;
+        }
+
+        if (!isValid) {
+          emailInput.setAttribute('aria-invalid', 'true');
+          emailInput.classList.add('input-error');
+          emailError.textContent = 'Introduce un correo electrónico válido.';
+          emailInput.focus();
+          return;
+        }
+
+        emailInput.setAttribute('aria-invalid', 'false');
+        emailInput.classList.remove('input-error');
+        emailError.textContent = '';
+        confirmationModal.classList.add('is-visible');
+        confirmationModal.setAttribute('aria-hidden', 'false');
+      });
+
+      confirmationModal.addEventListener('click', function (event) {
+        if (event.target.hasAttribute('data-close-modal')) {
+          confirmationModal.classList.remove('is-visible');
+          confirmationModal.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      emailInput.addEventListener('input', function () {
+        if (this.value.trim() === '') {
+          this.setAttribute('aria-invalid', 'false');
+          this.classList.remove('input-error');
+          emailError.textContent = '';
+          return;
+        }
+
+        if (validateEmail(this.value)) {
+          this.setAttribute('aria-invalid', 'false');
+          this.classList.remove('input-error');
+          emailError.textContent = '';
+        }
+      });
+    </script>
+  </body>
+</html>
