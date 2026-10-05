@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "home": "Home",
+    "functionalities": "Features",
+    "how-it-works": "How It Works",
+    "target-audience": "Who It's For",
+    "team": "Our Team",
+    "Demo": "Request Demo"
+  },
+  "hero": {
+    "title": "Revolutionize the health of\nyour crops with automated precision.",
+    "description": "Platform for planning and monitoring\nagricultural drone spraying operations",
+    "ReducesCosts": "Reduces costs",
+    "IncreaseProductivity": "Increase your productivity",
+    "ProtectTeam": "Protect your team",
+    "StartYour": "Start your free trial",
+    "howItWorks": "See how it works"
+  },
+  "functionalities": {
+    "title": "Our features.",
+    "description": "Everything you need for more efficient agricultural spraying.",
+    "mission": "Mission planning",
+    "Real-time": "Real-time monitoring",
+    "CheckWeather": "Check weather conditions",
+    "missionDescription": "Define spraying areas on an interactive map, schedule your missions and optimize resources.",
+    "Real-timeDescription": "Track drone location, status and progress during the operation.",
+    "CheckWeatherDescription": "Check the weather forecast and determine the right time to carry out your missions."
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "description": "In just 4 steps, take control of your operations.",
+    "plan": "Plan",
+    "planDescription": "Select your plot and define the area on the map.",
+    "weather": "Check the weather",
+    "weatherDescription": "Verify the weather conditions.",
+    "execute": "Execute",
+    "executeDescription": "Monitor the mission in real time.",
+    "analyze": "Analyze",
+    "analyzeDescription": "Review reports and history of your operations."
+  },
+  "available": {
+    "title": "Available on iPhone, Mac, Android and Windows",
+    "description": "Choose the device you prefer and manage your plots from wherever you are.",
+    "imageAlt": "AgriDron application mockup on laptop and phone"
+  },
+  "targetAudience": {
+    "title": "Who it's for",
+    "description": "A solution designed for every role in the field.",
+    "farmersTitle": "Farmers",
+    "farmersDescription": "Manage your farms, plots and operations from a single platform.",
+    "farmersImageAlt": "Farmer using the AgriDron application in the field",
+    "operatorsTitle": "Operators",
+    "operatorsDescription": "Execute and monitor missions with accurate information in real time.",
+    "operatorsImageAlt": "Operator controlling a spraying mission with AgriDron"
+  },
+  "team": {
+    "title": "Our team",
+    "description": "A group of professionals passionate about technology and the field.",
+    "roleFrontend": "Frontend Developer",
+    "roleBackend": "Backend Developer",
+    "roleDesigner": "UX/UI Designer",
+    "roleProductOwner": "Product Owner"
+  },
+  "footer": {
+    "linksTitle": "Links",
+    "contactTitle": "Contact",
+    "socialsLabel": "Social media",
+    "copyright": "© 2025 AgriDron Solutions. All rights reserved.",
+    "brandSub": "Solutions"
+  }
+}

@@ -1,0 +1,8 @@
+<mat-form-field class="selectLanguage" appearance="outline">
+  <mat-label>Select a language</mat-label>
+  <mat-select [value]="currentLang" (selectionChange)="useLanguage($event.value)" panelClass="language-panel">
+    @for (language of languages; track language) {
+      <mat-option [value]="language">{{ language.toUpperCase() }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>

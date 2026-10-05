@@ -1,0 +1,120 @@
+.how-it-works,
+.audiences {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 30px 32px 26px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #0c5a4f;
+  font-size: clamp(2.4rem, 3vw, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+.section-title p {
+  margin: 14px auto 0;
+  font-size: clamp(1.15rem, 1.7vw, 1.9rem);
+  line-height: 1.35;
+  color: rgba(12, 67, 57, 0.9);
+  letter-spacing: -0.04em;
+}
+
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(110px, 1fr));
+  align-items: start;
+  max-width: 1240px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.step-item {
+  text-align: center;
+  min-height: 220px;
+}
+
+.step-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.step-badge.green {
+  background: linear-gradient(180deg, #1aae82 0%, #0a9a71 100%);
+}
+
+.step-badge.blue {
+  background: linear-gradient(180deg, #46aef7 0%, #2b90e8 100%);
+}
+
+.step-badge.purple {
+  background: linear-gradient(180deg, #a37fe8 0%, #8d6ad9 100%);
+}
+
+.step-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
+}
+
+.step-icon svg {
+  width: 44px;
+  height: 44px;
+}
+
+.step-icon.green {
+  background: linear-gradient(180deg, #22b98d 0%, #159b76 100%);
+}
+
+.step-icon.blue {
+  background: linear-gradient(180deg, #4caef6 0%, #2a91e8 100%);
+}
+
+.step-icon.purple {
+  background: linear-gradient(180deg, #a980f0 0%, #8d69d9 100%);
+}
+
+.step-item h3 {
+  margin: 0;
+  color: rgba(13, 61, 52, 0.96);
+  font-size: clamp(1.35rem, 1.8vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.step-item p {
+  margin: 10px auto 0;
+  font-size: clamp(1rem, 1.3vw, 1.45rem);
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+  color: rgba(13, 61, 52, 0.82);
+  max-width: 200px;
+}
+
+.step-arrow {
+  align-self: center;
+  font-size: 3.2rem;
+  color: rgba(16, 95, 74, 0.9);
+  line-height: 1;
+  padding-top: 50px;
+}

@@ -1,0 +1,44 @@
+.how-it-works {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 30px 32px 26px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #0c5a4f;
+  font-size: clamp(2.4rem, 3vw, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+.section-title p {
+  margin: 14px auto 0;
+  font-size: clamp(1.15rem, 1.7vw, 1.9rem);
+  line-height: 1.35;
+  color: rgba(12, 67, 57, 0.9);
+  letter-spacing: -0.04em;
+}
+
+.steps-row2 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(110px, 1fr));
+  align-items: start;
+  max-width: 1240px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.steps-row2 img {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}

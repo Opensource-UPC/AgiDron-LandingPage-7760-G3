@@ -1,0 +1,34 @@
+<section class="audiences" id="audiences">
+  <div class="section-title simple">
+    <h2>{{ 'targetAudience.title' | translate }}</h2>
+    <p>{{ 'targetAudience.description' | translate }}</p>
+  </div>
+
+  <div class="audience-grid">
+    <article class="audience-card">
+      <div class="audience-image placeholder place-green">
+        <img class="targetimg"
+          src="assets/images/target-audience/target-audience-agricultores.png"
+          [alt]="'targetAudience.farmersImageAlt' | translate"
+        />
+      </div>
+      <div class="audience-body">
+        <h3>{{ 'targetAudience.farmersTitle' | translate }}</h3>
+        <p>{{ 'targetAudience.farmersDescription' | translate }}</p>
+      </div>
+    </article>
+
+    <article class="audience-card">
+      <div class="audience-image placeholder place-blue">
+        <img class="targetimg"
+             src="assets/images/target-audience/target-audience-operador.png"
+             [alt]="'targetAudience.operatorsImageAlt' | translate"
+        />
+      </div>
+      <div class="audience-body">
+        <h3>{{ 'targetAudience.operatorsTitle' | translate }}</h3>
+        <p>{{ 'targetAudience.operatorsDescription' | translate }}</p>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "functionalities": "Funcionalidades",
+    "how-it-works": "Como Funciona",
+    "target-audience": "Para Quien",
+    "team": "Nuestro Equipo",
+    "Demo": "Solicitar Demo"
+  },
+  "hero": {
+    "title": "Revoluciona la salud de\ntus cultivos con precisión\nautomatizada. ",
+    "description": "Plataforma para la planificación y monitoreo de\noperaciones de fumigación agrícola mediante drones",
+    "ReducesCosts": "Reduce costos",
+    "IncreaseProductivity": "Aumenta tu productividad",
+    "ProtectTeam": "Protege a tu equipo",
+    "StartYour": "Empieza tu prueba gratuita",
+    "howItWorks": "Ver cómo funciona"
+  },
+  "functionalities":{
+    "title": "Nuestras funcionalidades. ",
+    "description": "Todo lo que necesitas para una fumigación agrícola más eficiente.",
+    "mission": "Planificación de misiones",
+    "Real-time": "Monitoreo en tiempo real",
+    "CheckWeather": "Consulta las condiciones climáticas",
+    "missionDescription": "Define áreas de fumigación en un mapa interactivo, programa tus misiones y optimiza recursos.",
+    "Real-timeDescription": "Visualiza la ubicación, estado y progreso de los drones durante la operación.",
+    "CheckWeatherDescription": "Consulta el pronóstico del clima y determina el momento adecuado para realizar tus misiones. "
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "description": "En solo 4 pasos, lleva el control de tus operaciones.",
+    "plan": "Planifica",
+    "planDescription": "Selecciona tu parcela y define el área en el mapa.",
+    "weather": "Consulta el clima",
+    "weatherDescription": "Verifica las condiciones meteorológicas.",
+    "execute": "Ejecuta",
+    "executeDescription": "Monitorea la misión en tiempo real.",
+    "analyze": "Analiza",
+    "analyzeDescription": "Revisa reportes e historial de tus operaciones."
+  },
+  "available": {
+    "title": "Disponible en Iphone, Mac, Android y Windows",
+    "description": "Elige el dispositivo que prefieras y gestiona tus parcelas desde donde estés.",
+    "imageAlt": "Mockup de la aplicación AgriDron en laptop y celular"
+  },
+  "targetAudience": {
+    "title": "Para quién",
+    "description": "Una solución diseñada para cada actor del campo.",
+    "farmersTitle": "Agricultores",
+    "farmersDescription": "Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.",
+    "farmersImageAlt": "Agricultor usando la aplicación AgriDron en el campo",
+    "operatorsTitle": "Operadores",
+    "operatorsDescription": "Ejecuta y monitorea las misiones con información precisa y en tiempo real.",
+    "operatorsImageAlt": "Operador controlando una misión de fumigación con AgriDron"
+  },
+  "team": {
+    "title": "Nuestro equipo",
+    "description": "Un grupo de profesionales apasionados por la tecnología y el campo.",
+    "roleFrontend": "Desarrollador Frontend",
+    "roleBackend": "Desarrollador Backend",
+    "roleDesigner": "Diseñador UX/UI",
+    "roleProductOwner": "Product Owner"
+  },
+  "footer": {
+    "linksTitle": "Enlaces",
+    "contactTitle": "Contacto",
+    "socialsLabel": "Redes sociales",
+    "copyright": "© 2025 AgriDron Solutions. Todos los derechos reservados.",
+    "brandSub": "Solutions"
+  }
+}

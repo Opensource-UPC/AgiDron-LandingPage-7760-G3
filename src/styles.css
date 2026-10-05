@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+.selectLanguage .mdc-text-field--filled:not(.mdc-text-field--disabled),
+.selectLanguage .mdc-text-field--outlined:not(.mdc-text-field--disabled) {
+  background-color: white !important;
+}
+
+.selectLanguage .mat-mdc-form-field-focus-overlay,
+.selectLanguage .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__ripple::before {
+  background-color: transparent !important;
+}
+
+.language-panel {
+  background-color: white !important;
+}
+
+.language-panel .mat-mdc-option:hover,
+.language-panel .mat-mdc-option.mat-mdc-option-active {
+  background-color: #1B463C !important;
+}
+
+.language-panel .mat-mdc-option:hover .mdc-list-item__primary-text,
+.language-panel .mat-mdc-option.mat-mdc-option-active .mdc-list-item__primary-text {
+  color: white !important;
+}
+
+.language-panel .mat-mdc-option:hover .mat-pseudo-checkbox,
+.language-panel .mat-mdc-option.mat-mdc-option-active .mat-pseudo-checkbox,
+.language-panel .mat-mdc-option.mdc-list-item--selected .mat-pseudo-checkbox {
+  color: white !important;
+  border-color: white !important;
+}
+
+.language-panel .mat-mdc-option:hover .mat-pseudo-checkbox::after,
+.language-panel .mat-mdc-option.mat-mdc-option-active .mat-pseudo-checkbox::after,
+.language-panel .mat-mdc-option.mdc-list-item--selected .mat-pseudo-checkbox::after {
+  border-color: white !important;
+}
+
+.language-panel .mat-mdc-option:hover svg path,
+.language-panel .mat-mdc-option.mat-mdc-option-active svg path {
+  fill: white !important;
+  stroke: white !important;
+}

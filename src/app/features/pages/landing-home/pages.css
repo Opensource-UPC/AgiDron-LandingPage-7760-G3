@@ -1,0 +1,25 @@
+:root {
+  --green-1: #0e7d66;
+  --green-2: #0c6e5f;
+  --green-3: #0d8d73;
+  --green-4: #1b7d64;
+  --green-5: #d7f8e5;
+  --text: #0d3c35;
+  --muted: #2a5f54;
+  --light: #f3f5f2;
+  --white: #ffffff;
+  --dark: #1b2b27;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}

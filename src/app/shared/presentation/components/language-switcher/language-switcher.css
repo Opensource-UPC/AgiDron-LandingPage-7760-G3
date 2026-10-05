@@ -1,0 +1,5 @@
+.selectLanguage {
+  --mdc-filled-text-field-container-color: white;
+  background-color: white;
+  border-radius: 8px;
+}

@@ -1,0 +1,146 @@
+.site-footer {
+  margin-top: 0;
+  background: linear-gradient(180deg, #0a5a4d 0%, #073e36 100%);
+  color: rgba(255,255,255,0.9);
+  padding: 26px 30px 18px;
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.8fr;
+  gap: 32px;
+  align-items: start;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 140px;
+}
+
+.footer-logo {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #e7f3ea 0%, #d9efe1 100%);
+  box-shadow: inset 0 0 0 1px rgba(17, 91, 74, 0.08);
+}
+
+.footer-brand .brand-text {
+  color: white;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.96);
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.social {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
+.copyright {
+  max-width: 1280px;
+  margin: 14px auto 0;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.92rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 260px;
+}
+
+.logo-mark {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #e7f3ea 0%, #d9efe1 100%);
+  box-shadow: inset 0 0 0 1px rgba(17, 91, 74, 0.08);
+}
+
+.leaf {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #65bc87, #2b9d68);
+  border-radius: 100% 0 100% 0;
+  transform-origin: center;
+}
+
+.leaf-1 {
+  left: 6px;
+  top: 10px;
+  transform: rotate(35deg);
+}
+
+.leaf-2 {
+  left: 18px;
+  top: 6px;
+  transform: rotate(-15deg);
+}
+
+.leaf-3 {
+  left: 23px;
+  top: 20px;
+  transform: rotate(100deg);
+}
+
+.leaf-4 {
+  left: 9px;
+  top: 22px;
+  transform: rotate(165deg);
+}
+
+.center-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #1a8d66;
+  border-radius: 50%;
+  top: 18px;
+  left: 20px;
+  box-shadow: 0 0 0 3px rgba(16, 122, 88, 0.18);
+}

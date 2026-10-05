@@ -1,0 +1,35 @@
+<mat-toolbar class="navbar">
+  <!-- Logo y Nombre del Proyecto -->
+  <div class="brand">
+    <div class="logo-mark">
+      <span class="leaf leaf-1"></span>
+      <span class="leaf leaf-2"></span>
+      <span class="leaf leaf-3"></span>
+      <span class="leaf leaf-4"></span>
+      <span class="center-dot"></span>
+    </div>
+    <div class="brand-text">
+      <span class="brand-name">AgriDron</span>
+      <span class="brand-sub">Solutions</span>
+    </div>
+  </div>
+
+  <!-- Enlaces de Navegación (Anclas de sección) -->
+  <nav class="nav-links">
+    <a href="#inicio">{{ 'navbar.home' | translate }}</a>
+    <a href="#funcionalidades">{{ 'navbar.functionalities' | translate }}</a>
+    <a href="#como-funciona">{{ 'navbar.how-it-works' | translate }}</a>
+    <a href="#para-quien">{{ 'navbar.target-audience' | translate }}</a>
+    <a href="#nuestro-equipo">{{ 'navbar.team' | translate }}</a>
+    <button mat-flat-button class="btn-demo">{{ 'navbar.Demo' | translate }}</button>
+  </nav>
+
+  <!-- Espaciador flexible para empujar el botón a la derecha -->
+  <span class="spacer"></span>
+
+  <!-- Acciones a la derecha: Selector de idioma y Botón CTA -->
+  <div class="nav-actions">
+
+    <app-language-switcher />
+  </div>
+</mat-toolbar>
