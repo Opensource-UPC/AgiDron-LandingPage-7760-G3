@@ -1,5 +1,28 @@
-.selectLanguage {
-  --mdc-filled-text-field-container-color: white;
-  background-color: white;
-  border-radius: 8px;
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 3px;
+  border: 1px solid rgba(15, 65, 54, 0.14);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.language-switch button {
+  min-width: 38px;
+  min-height: 34px;
+  padding: 6px 9px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #365b50;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.language-switch button[aria-pressed="true"] {
+  background: #0e4b36;
+  color: #fff;
 }

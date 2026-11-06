@@ -1,8 +1,11 @@
-<mat-form-field class="selectLanguage" appearance="outline">
-  <mat-label>Select a language</mat-label>
-  <mat-select [value]="currentLang" (selectionChange)="useLanguage($event.value)" panelClass="language-panel">
-    @for (language of languages; track language) {
-      <mat-option [value]="language">{{ language.toUpperCase() }}</mat-option>
-    }
-  </mat-select>
-</mat-form-field>
+<div class="language-switch" role="group" aria-label="Language / Idioma">
+  @for (language of languages; track language) {
+    <button
+      type="button"
+      [attr.aria-pressed]="currentLang() === language"
+      (click)="useLanguage(language)"
+    >
+      {{ language.toUpperCase() }}
+    </button>
+  }
+</div>

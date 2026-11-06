@@ -1,6 +1,5 @@
-<mat-toolbar class="navbar">
-  <!-- Logo y Nombre del Proyecto -->
-  <div class="brand">
+<header class="site-header" [class.nav-open]="navOpen()" id="inicio">
+  <a class="logo" href="#inicio" aria-label="AgriDron Solutions logo">
     <div class="logo-mark">
       <span class="leaf leaf-1"></span>
       <span class="leaf leaf-2"></span>
@@ -12,24 +11,48 @@
       <span class="brand-name">AgriDron</span>
       <span class="brand-sub">Solutions</span>
     </div>
-  </div>
+  </a>
 
-  <!-- Enlaces de Navegación (Anclas de sección) -->
-  <nav class="nav-links">
-    <a href="#inicio">{{ 'navbar.home' | translate }}</a>
-    <a href="#funcionalidades">{{ 'navbar.functionalities' | translate }}</a>
-    <a href="#como-funciona">{{ 'navbar.how-it-works' | translate }}</a>
-    <a href="#para-quien">{{ 'navbar.target-audience' | translate }}</a>
-    <a href="#nuestro-equipo">{{ 'navbar.team' | translate }}</a>
-    <button mat-flat-button class="btn-demo">{{ 'navbar.Demo' | translate }}</button>
-  </nav>
+  <button
+    class="nav-toggle"
+    type="button"
+    [attr.aria-label]="navOpen() ? ('navbar.closeMenu' | translate) : ('navbar.openMenu' | translate)"
+    [attr.aria-expanded]="navOpen()"
+    aria-controls="nav-collapse"
+    (click)="toggleMenu()"
+  >
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
 
-  <!-- Espaciador flexible para empujar el botón a la derecha -->
-  <span class="spacer"></span>
-
-  <!-- Acciones a la derecha: Selector de idioma y Botón CTA -->
-  <div class="nav-actions">
+  <div class="nav-collapse" id="nav-collapse">
+    <nav class="main-nav" [attr.aria-label]="'navbar.primaryLabel' | translate">
+      <a href="#inicio" (click)="closeMenu()">{{ 'navbar.home' | translate }}</a>
+      <a href="#features" (click)="closeMenu()">{{ 'navbar.features' | translate }}</a>
+      <a href="#showcase" (click)="closeMenu()">{{ 'navbar.showcase' | translate }}</a>
+      <a href="#how-it-works" (click)="closeMenu()">{{ 'navbar.howItWorks' | translate }}</a>
+      <a href="#audiences" (click)="closeMenu()">{{ 'navbar.audience' | translate }}</a>
+      <a href="#planes" (click)="closeMenu()">{{ 'navbar.plans' | translate }}</a>
+      <a href="#contacto" (click)="closeMenu()">{{ 'navbar.contact' | translate }}</a>
+      <a href="#team-section" (click)="closeMenu()">{{ 'navbar.team' | translate }}</a>
+    </nav>
 
     <app-language-switcher />
+
+    <a href="#contacto" class="demo-button" (click)="closeMenu()">
+      {{ 'navbar.demo' | translate }}
+    </a>
+
+    <a
+      href="https://agridronwebapp.web.app/home"
+      class="app-nav-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      [attr.aria-label]="'navbar.appButton' | translate"
+    >
+      <span>{{ 'navbar.appButton' | translate }}</span>
+      <span aria-hidden="true">↗</span>
+    </a>
   </div>
-</mat-toolbar>
+</header>

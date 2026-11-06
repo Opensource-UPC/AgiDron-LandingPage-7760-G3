@@ -1,0 +1,144 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: clamp(32px, 7vw, 100px);
+  align-items: start;
+  padding: clamp(48px, 7vw, 100px) clamp(22px, 8vw, 120px);
+  background: #fff;
+}
+
+.contact-copy {
+  max-width: 480px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #148568;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-copy h2 {
+  margin: 0;
+  color: #0c5a4f;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+  text-wrap: balance;
+}
+
+.contact-copy > p {
+  margin: 18px 0 28px;
+  color: #58706a;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.contact-email,
+.contact-phone {
+  display: block;
+  width: fit-content;
+  margin-top: 12px;
+  color: #11775f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid rgba(16, 95, 74, 0.12);
+  border-radius: 22px;
+  background: #f9fbfa;
+  box-shadow: 0 16px 45px rgba(14, 74, 57, 0.08);
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.form-field label {
+  color: #214a40;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d5e2dc;
+  border-radius: 10px;
+  background: #fff;
+  color: #173f35;
+  font-size: 0.93rem;
+}
+
+.form-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #148568;
+  outline: 3px solid rgba(20, 133, 104, 0.14);
+}
+
+.form-field input.ng-invalid.ng-touched,
+.form-field textarea.ng-invalid.ng-touched {
+  border-color: rgba(190, 62, 62, 0.8);
+}
+
+.field-error {
+  color: #c94949;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.contact-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #1da27e, #0f8e74);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-note {
+  margin: 0;
+  color: #71847e;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 52px 24px;
+  }
+
+  .contact-copy {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 44px 18px;
+  }
+}

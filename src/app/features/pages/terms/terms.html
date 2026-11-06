@@ -1,0 +1,64 @@
+<div class="page-shell">
+  <header class="site-header">
+    <a routerLink="/" class="logo" aria-label="Volver a AgriDron Solutions">
+      <div class="logo-mark">
+        <span class="leaf leaf-1"></span>
+        <span class="leaf leaf-2"></span>
+        <span class="leaf leaf-3"></span>
+        <span class="leaf leaf-4"></span>
+        <span class="center-dot"></span>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">AgriDron</span>
+        <span class="brand-sub">Solutions</span>
+      </div>
+    </a>
+
+    <a routerLink="/" class="app-nav-button">
+      <span aria-hidden="true">←</span>
+      <span>{{ 'terms.back' | translate }}</span>
+    </a>
+  </header>
+
+  <main class="terms-container">
+    <div class="terms-header">
+      <h1>{{ 'terms.title' | translate }}</h1>
+      <div class="terms-meta">
+        <span><strong>{{ 'terms.versionLabel' | translate }}</strong> {{ 'terms.versionValue' | translate }}</span>
+        <span><strong>{{ 'terms.updatedLabel' | translate }}</strong> {{ 'terms.updatedValue' | translate }}</span>
+        <span><strong>{{ 'terms.organizationLabel' | translate }}</strong> {{ 'terms.organizationValue' | translate }}</span>
+      </div>
+    </div>
+
+    @for (section of sections(); track $index) {
+      <section class="terms-section">
+        <h2>{{ section.title }}</h2>
+        @for (paragraph of section.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+        @if (section.bullets?.length) {
+          <ul>
+            @for (bullet of section.bullets; track $index) {
+              <li>{{ bullet }}</li>
+            }
+          </ul>
+        }
+        @if (section.alert) {
+          <div class="terms-alert">
+            <p>{{ section.alert }}</p>
+          </div>
+        }
+      </section>
+    }
+
+    <section class="terms-section terms-contact">
+      <p>
+        <a href="mailto:info@agridron.com">info@agridron.com</a><br />
+        {{ 'terms.phone' | translate }}<br />
+        {{ 'terms.location' | translate }}
+      </p>
+    </section>
+  </main>
+
+  <app-footer-components />
+</div>

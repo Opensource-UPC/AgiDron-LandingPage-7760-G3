@@ -1,33 +1,53 @@
 <section class="audiences" id="audiences">
   <div class="section-title simple">
-    <h2>{{ 'targetAudience.title' | translate }}</h2>
-    <p>{{ 'targetAudience.description' | translate }}</p>
+    <h2>{{ 'audiences.title' | translate }}</h2>
+    <p>{{ 'audiences.description' | translate }}</p>
   </div>
 
   <div class="audience-grid">
     <article class="audience-card">
-      <div class="audience-image placeholder place-green">
-        <img class="targetimg"
-          src="assets/images/target-audience/target-audience-agricultores.png"
-          [alt]="'targetAudience.farmersImageAlt' | translate"
+      <div class="audience-image place-green">
+        <img
+          src="assets/images/audience/agricultores.jpg"
+          [alt]="'audiences.farmersImageAlt' | translate"
         />
       </div>
       <div class="audience-body">
-        <h3>{{ 'targetAudience.farmersTitle' | translate }}</h3>
-        <p>{{ 'targetAudience.farmersDescription' | translate }}</p>
+        <h3>{{ 'audiences.farmersTitle' | translate }}</h3>
+        <p>{{ 'audiences.farmersDescription' | translate }}</p>
+        <a
+          href="https://agridronapp.web.app/fincas"
+          class="audience-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="'audiences.farmersCta' | translate"
+        >
+          <span>{{ 'audiences.farmersCta' | translate }}</span>
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
     </article>
 
     <article class="audience-card">
-      <div class="audience-image placeholder place-blue">
-        <img class="targetimg"
-             src="assets/images/target-audience/target-audience-operador.png"
-             [alt]="'targetAudience.operatorsImageAlt' | translate"
+      <div class="audience-image place-blue">
+        <img
+          src="assets/images/audience/operadores.webp"
+          [alt]="'audiences.operatorsImageAlt' | translate"
         />
       </div>
       <div class="audience-body">
-        <h3>{{ 'targetAudience.operatorsTitle' | translate }}</h3>
-        <p>{{ 'targetAudience.operatorsDescription' | translate }}</p>
+        <h3>{{ 'audiences.operatorsTitle' | translate }}</h3>
+        <p>{{ 'audiences.operatorsDescription' | translate }}</p>
+        <a
+          href="https://agridronapp.web.app/misiones"
+          class="audience-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="'audiences.operatorsCta' | translate"
+        >
+          <span>{{ 'audiences.operatorsCta' | translate }}</span>
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
     </article>
   </div>

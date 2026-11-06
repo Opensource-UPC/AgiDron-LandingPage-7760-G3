@@ -1,0 +1,37 @@
+<section class="faq-section" id="faq">
+  <div class="faq-intro">
+    <span class="section-eyebrow">{{ 'faq.eyebrow' | translate }}</span>
+    <h2>{{ 'faq.title' | translate }}</h2>
+    <p>{{ 'faq.description' | translate }}</p>
+    <div class="faq-contact-card">
+      <h3>{{ 'faq.cardTitle' | translate }}</h3>
+      <p>{{ 'faq.cardDescription' | translate }}</p>
+      <a href="#contacto" class="faq-contact-button">
+        <span>{{ 'faq.contactButton' | translate }}</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="faq-list" [attr.aria-label]="'faq.listLabel' | translate">
+    @for (item of questions(); track $index; let index = $index) {
+      <article class="faq-item" [class.is-open]="openIndex() === index">
+        <button
+          type="button"
+          class="faq-question"
+          [attr.aria-expanded]="openIndex() === index"
+          [attr.aria-controls]="'faq-answer-' + index"
+          (click)="toggle(index)"
+        >
+          <span>{{ item.question }}</span>
+          <span class="faq-toggle-icon" aria-hidden="true">
+            {{ openIndex() === index ? '−' : '+' }}
+          </span>
+        </button>
+        <div class="faq-answer" [id]="'faq-answer-' + index" [hidden]="openIndex() !== index">
+          <p>{{ item.answer }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>

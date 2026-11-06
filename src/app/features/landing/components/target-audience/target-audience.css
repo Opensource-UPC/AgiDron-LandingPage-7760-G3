@@ -1,50 +1,57 @@
 .audiences {
-  max-width: 1540px;
-  margin: 0 auto;
-  padding: 30px 32px 26px;
+  width: 100%;
+  padding: clamp(42px, 5vw, 72px) clamp(22px, 5vw, 72px);
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: clamp(24px, 3vw, 40px);
 }
 
 .section-title h2 {
   margin: 0;
   color: #0c5a4f;
-  font-size: clamp(2.4rem, 3vw, 3.8rem);
+  font-size: clamp(2rem, 4vw, 3.4rem);
   line-height: 1.1;
   letter-spacing: -0.06em;
   font-weight: 800;
+  text-wrap: balance;
 }
 
 .section-title p {
+  max-width: 760px;
   margin: 14px auto 0;
-  font-size: clamp(1.15rem, 1.7vw, 1.9rem);
-  line-height: 1.35;
   color: rgba(12, 67, 57, 0.9);
-  letter-spacing: -0.04em;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.6;
 }
 
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .audience-card {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(17, 90, 74, 0.18);
+  min-height: 0;
+  border: 1px solid rgba(17, 90, 74, 0.14);
   border-radius: 20px;
   overflow: hidden;
-  min-height: 420px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(14, 74, 57, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 44px rgba(14, 74, 57, 0.15);
 }
 
 .audience-image {
   position: relative;
-  height: 260px;
+  height: clamp(180px, 22vw, 280px);
   border-radius: 18px 18px 0 0;
   overflow: hidden;
   display: flex;
@@ -52,12 +59,26 @@
   justify-content: center;
 }
 
-.targetimg{
-  margin-top: 180px;
+.audience-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
 }
 
-.placeholder {
-  background: linear-gradient(135deg, rgba(74, 162, 111, 0.25), rgba(27, 76, 59, 0.12));
+.audience-card:hover .audience-image img {
+  transform: scale(1.04);
+}
+
+.audience-image::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 48, 37, 0.02), rgba(9, 48, 37, 0.15));
+  content: "";
+  pointer-events: none;
 }
 
 .place-green {
@@ -68,59 +89,57 @@
   background: linear-gradient(135deg, #dfeaf7 0%, #b9d9f6 100%);
 }
 
-.place-purple {
-  background: linear-gradient(135deg, #efe7ff 0%, #d6caf8 100%);
-}
-
-.placeholder::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(0,0,0,0.02));
-}
-
-.placeholder-icon {
-  position: relative;
-  z-index: 1;
-  width: 76px;
-  height: 76px;
-  border-radius: 18px;
-  background: linear-gradient(180deg, #1aae82 0%, #0a9d73 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 20px rgba(16, 116, 86, 0.18);
-}
-
-.place-blue .placeholder-icon {
-  background: linear-gradient(180deg, #48b0f6 0%, #2a94eb 100%);
-}
-
-.place-purple .placeholder-icon {
-  background: linear-gradient(180deg, #a57ded 0%, #8c67d7 100%);
-}
-
-.placeholder-icon svg {
-  width: 36px;
-  height: 36px;
-}
-
 .audience-body {
   padding: 20px 20px 24px;
 }
 
 .audience-body h3 {
   margin: 0;
-  font-size: clamp(1.5rem, 1.8vw, 2.2rem);
-  line-height: 1.2;
-  letter-spacing: -0.05em;
   color: rgba(13, 61, 52, 0.96);
+  font-size: clamp(1.2rem, 1.7vw, 1.6rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
 }
 
 .audience-body p {
   margin: 12px 0 0;
-  font-size: clamp(1.05rem, 1.4vw, 1.55rem);
-  line-height: 1.38;
-  letter-spacing: -0.04em;
   color: rgba(13, 61, 52, 0.84);
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+.audience-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 0.85rem 1.45rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #1da27e 0%, #0f8e74 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(16, 108, 83, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.audience-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(16, 108, 83, 0.28);
+}
+
+@media (max-width: 760px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 480px) {
+  .audiences {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
 }

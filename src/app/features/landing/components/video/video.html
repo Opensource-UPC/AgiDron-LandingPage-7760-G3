@@ -1,0 +1,60 @@
+<section class="video-section" id="video-section">
+  <div class="section-title simple">
+    <span class="section-eyebrow">{{ 'video.eyebrow' | translate }}</span>
+    <h2>{{ 'video.title' | translate }}</h2>
+    <p>{{ 'video.description' | translate }}</p>
+  </div>
+
+  <div class="video-container">
+    <div class="video-player-wrapper">
+      <video
+        #productVideo
+        class="product-video-element"
+        controls
+        playsinline
+        preload="metadata"
+        poster="assets/images/hero/hero-agricultura.jpg"
+        [attr.aria-label]="'video.playBtn' | translate"
+        (play)="hideOverlay()"
+        (ended)="showOverlay()"
+      >
+        <source src="assets/video/presentationvideo.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay" [class.is-hidden]="overlayHidden()">
+        <div class="video-screen-bg" aria-hidden="true"></div>
+        <div class="video-screen-content">
+          <span class="video-badge">{{ 'video.badge' | translate }}</span>
+          <h3>{{ 'video.titleCard' | translate }}</h3>
+          <p>{{ 'video.subCard' | translate }}</p>
+          <button
+            type="button"
+            class="video-play-btn"
+            [attr.aria-label]="'video.playBtn' | translate"
+            (click)="playVideo()"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-actions">
+      <button type="button" class="video-action-link" (click)="playVideo()">
+        <span>{{ 'video.playLocal' | translate }}</span>
+        <span aria-hidden="true">▶</span>
+      </button>
+      <a
+        href="https://agridronwebapp.web.app/home"
+        class="video-action-link primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>{{ 'video.openApp' | translate }}</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>

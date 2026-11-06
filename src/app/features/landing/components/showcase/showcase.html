@@ -1,0 +1,88 @@
+<section class="app-showcase" id="showcase">
+  <div class="section-title simple">
+    <span class="section-eyebrow">{{ 'showcase.eyebrow' | translate }}</span>
+    <h2>{{ 'showcase.title' | translate }}</h2>
+    <p>{{ 'showcase.description' | translate }}</p>
+  </div>
+
+  <div class="showcase-tabs" role="tablist" [attr.aria-label]="'showcase.tabsLabel' | translate">
+    <button
+      type="button"
+      class="showcase-tab"
+      role="tab"
+      [class.active]="activeTab() === 'dashboard'"
+      [attr.aria-selected]="activeTab() === 'dashboard'"
+      (click)="selectTab('dashboard')"
+    >
+      {{ 'showcase.tabDashboard' | translate }}
+    </button>
+    <button
+      type="button"
+      class="showcase-tab"
+      role="tab"
+      [class.active]="activeTab() === 'fincas'"
+      [attr.aria-selected]="activeTab() === 'fincas'"
+      (click)="selectTab('fincas')"
+    >
+      {{ 'showcase.tabFincas' | translate }}
+    </button>
+    <button
+      type="button"
+      class="showcase-tab"
+      role="tab"
+      [class.active]="activeTab() === 'misiones'"
+      [attr.aria-selected]="activeTab() === 'misiones'"
+      (click)="selectTab('misiones')"
+    >
+      {{ 'showcase.tabMisiones' | translate }}
+    </button>
+  </div>
+
+  @if (activeTab() === 'dashboard') {
+    <article class="showcase-panel active" role="tabpanel">
+      <div class="showcase-info">
+        <h3>{{ 'showcase.tabDashboardTitle' | translate }}</h3>
+        <p>{{ 'showcase.tabDashboardDesc' | translate }}</p>
+        <a href="https://agridronapp.web.app/inicio" class="showcase-cta" target="_blank" rel="noopener noreferrer">
+          <span>{{ 'showcase.tabDashboardCta' | translate }}</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="showcase-frame">
+        <img src="assets/images/showcase/app-dashboard.png" [alt]="'showcase.tabDashboardAlt' | translate" />
+      </div>
+    </article>
+  }
+
+  @if (activeTab() === 'fincas') {
+    <article class="showcase-panel active" role="tabpanel">
+      <div class="showcase-info">
+        <h3>{{ 'showcase.tabFincasTitle' | translate }}</h3>
+        <p>{{ 'showcase.tabFincasDesc' | translate }}</p>
+        <a href="https://agridronapp.web.app/fincas" class="showcase-cta" target="_blank" rel="noopener noreferrer">
+          <span>{{ 'showcase.tabFincasCta' | translate }}</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="showcase-frame">
+        <img src="assets/images/showcase/app-fincas.png" [alt]="'showcase.tabFincasAlt' | translate" />
+      </div>
+    </article>
+  }
+
+  @if (activeTab() === 'misiones') {
+    <article class="showcase-panel active" role="tabpanel">
+      <div class="showcase-info">
+        <h3>{{ 'showcase.tabMisionesTitle' | translate }}</h3>
+        <p>{{ 'showcase.tabMisionesDesc' | translate }}</p>
+        <a href="https://agridronapp.web.app/misiones" class="showcase-cta" target="_blank" rel="noopener noreferrer">
+          <span>{{ 'showcase.tabMisionesCta' | translate }}</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="showcase-frame">
+        <img src="assets/images/showcase/app-misiones.png" [alt]="'showcase.tabMisionesAlt' | translate" />
+      </div>
+    </article>
+  }
+</section>

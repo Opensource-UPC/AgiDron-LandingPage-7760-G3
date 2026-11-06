@@ -1,4 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================================================
+   AGRIDRON - GLOBAL STYLES
+   ========================================================= */
+
+:root {
+  --green-1: #0e7d66;
+  --green-2: #0c6e5f;
+  --green-3: #0d8d73;
+  --green-4: #1b7d64;
+  --green-5: #d7f8e5;
+  --text: #0d3c35;
+  --muted: #2a5f54;
+  --light: #f3f5f2;
+  --white: #ffffff;
+  --dark: #1b2b27;
+  --section-padding-x: clamp(22px, 5vw, 72px);
+  scroll-padding-top: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: var(--text);
+  overflow-x: clip;
+  line-height: 1.5;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Shared section headings */
+.section-title {
+  text-align: center;
+  margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #0c5a4f;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.section-title p {
+  margin: 14px auto 0;
+  max-width: 760px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: rgba(12, 67, 57, 0.9);
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #148568;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #f3ae45;
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   Angular Material language select overrides
+   ========================================================= */
 
 .selectLanguage .mdc-text-field--filled:not(.mdc-text-field--disabled),
 .selectLanguage .mdc-text-field--outlined:not(.mdc-text-field--disabled) {
@@ -16,7 +111,7 @@
 
 .language-panel .mat-mdc-option:hover,
 .language-panel .mat-mdc-option.mat-mdc-option-active {
-  background-color: #1B463C !important;
+  background-color: #1b463c !important;
 }
 
 .language-panel .mat-mdc-option:hover .mdc-list-item__primary-text,
@@ -41,4 +136,15 @@
 .language-panel .mat-mdc-option.mat-mdc-option-active svg path {
   fill: white !important;
   stroke: white !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
