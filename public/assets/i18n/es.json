@@ -87,7 +87,7 @@
     "eyebrow": "Video Demostrativo",
     "title": "Video About-the-Product",
     "description": "Conoce cómo AgriDron Solutions transforma las labores agrícolas: reducción de costos, protección de los operarios y fumigación milimétrica sin desperdicio.",
-    "badge": "1-3 minutos",
+    "badge": "4 minutos",
     "titleCard": "AgriDron Solutions: Agricultura de Precisión en Acción",
     "subCard": "Fumigación autónoma con drones y monitoreo agronómico inteligente",
     "playBtn": "Reproducir video promocional",
@@ -192,7 +192,11 @@
     "roleFrontend": "Desarrollador Frontend",
     "roleBackend": "Desarrollador Backend",
     "roleDesigner": "Diseñador UX/UI",
-    "roleProductOwner": "Product Owner"
+    "roleProductOwner": "Product Owner",
+    "videoEyebrow": "Video About-the-Team",
+    "videoTitle": "Conoce al equipo detrás de AgriDron",
+    "videoDesc": "Te contamos quiénes somos, cómo nos organizamos y cómo construimos AgriDron Solutions.",
+    "videoCta": "Ver en YouTube"
   },
   "footer": {
     "links": "Enlaces",
