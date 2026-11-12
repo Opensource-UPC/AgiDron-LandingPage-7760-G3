@@ -6,33 +6,55 @@
 
   <div class="team-grid">
     <div class="team-member">
-      <div class="member-avatar avatar-1"></div>
+      <div class="member-avatar"><img src="assets/images/teamPictures/Italo_Damacen.png" alt="Damacen Galindo, Italo Gianfranco" loading="lazy" /></div>
       <div class="member-name">Damacen Galindo, Italo Gianfranco</div>
       <div class="member-role">{{ 'team.roleDesigner' | translate }}</div>
     </div>
 
     <div class="team-member">
-      <div class="member-avatar avatar-2"></div>
+      <div class="member-avatar"><img src="assets/images/teamPictures/EdwinNicho.jpg" alt="Nicho Huillcañahui, Edwin Noe" loading="lazy" /></div>
       <div class="member-name">Nicho Huillcañahui, Edwin Noe</div>
       <div class="member-role">{{ 'team.roleBackend' | translate }}</div>
     </div>
 
     <div class="team-member">
-      <div class="member-avatar avatar-3"></div>
+      <div class="member-avatar"><img src="assets/images/teamPictures/Gabriel_Ramirez.jpg" alt="Ramirez Gutierrez, Gabriel" loading="lazy" /></div>
       <div class="member-name">Ramirez Gutierrez, Gabriel</div>
       <div class="member-role">{{ 'team.roleFrontend' | translate }}</div>
     </div>
 
     <div class="team-member">
-      <div class="member-avatar avatar-3"></div>
+      <div class="member-avatar"><img src="assets/images/teamPictures/SebastianSayago_Foto.png" alt="Sayago Vidal, Sebastian Leonardo" loading="lazy" /></div>
       <div class="member-name">Sayago Vidal, Sebastian Leonardo</div>
       <div class="member-role">{{ 'team.roleDesigner' | translate }}</div>
     </div>
 
     <div class="team-member">
-      <div class="member-avatar avatar-4"></div>
+      <div class="member-avatar"><img src="assets/images/teamPictures/Alexander_Vasquez.png" alt="Vasquez Roncal, Alexander Felipe" loading="lazy" /></div>
       <div class="member-name">Vasquez Roncal, Alexander Felipe</div>
       <div class="member-role">{{ 'team.roleProductOwner' | translate }}</div>
     </div>
   </div>
+
+  <a
+    class="team-video-card"
+    href="https://youtu.be/Rp80VaA6blU"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div class="team-video-thumb">
+      <img src="assets/images/hero/hero-agricultura.jpg" [alt]="'team.videoTitle' | translate" loading="lazy" />
+      <span class="team-video-play" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+      </span>
+      <span class="team-video-duration">8 min</span>
+    </div>
+    <div class="team-video-info">
+      <span class="team-video-eyebrow">{{ 'team.videoEyebrow' | translate }}</span>
+      <h3>{{ 'team.videoTitle' | translate }}</h3>
+      <p>{{ 'team.videoDesc' | translate }}</p>
+      <span class="team-video-cta">{{ 'team.videoCta' | translate }} →</span>
+    </div>
+  </a>
+
 </section>
