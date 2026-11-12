@@ -39,25 +39,70 @@
     "weatherDescription": "Check the forecast and choose the right time to carry out your missions."
   },
   "showcase": {
-    "eyebrow": "Real-Time Web Platform",
-    "title": "Explore AgriDron Inside",
-    "description": "Experience our cloud web application connected to our service architecture. Built for both field and office operations.",
+    "eyebrow": "Real-time Web Platform",
+    "title": "Explore AgriDron from the inside",
+    "description": "Explore the views of the web application connected to our services architecture. Designed to operate in the field or from the office.",
     "tabsLabel": "Platform views",
+
     "tabDashboard": "Operations Dashboard",
-    "tabDashboardTitle": "Comprehensive control dashboard",
-    "tabDashboardDesc": "Track registered farms, total hectares, active missions, and real-time weather forecasts to make timely decisions.",
+    "tabDashboardTitle": "Comprehensive control panel",
+    "tabDashboardDesc": "View registered farms, total hectares, ongoing missions and real-time weather conditions to make immediate decisions.",
     "tabDashboardCta": "Open Dashboard",
     "tabDashboardAlt": "AgriDron operations dashboard",
-    "tabFincas": "Farms & Fields Management",
-    "tabFincasTitle": "Cartographic field mapping",
-    "tabFincasDesc": "Register properties and draw exact boundaries over satellite maps. Organize crops and monitor precise parcel dimensions.",
+
+    "tabFincas": "Farms",
+    "tabFincasTitle": "Farm registry",
+    "tabFincasDesc": "Register your properties with their location and general data to organize all your operations in one place.",
     "tabFincasCta": "Go to Farms",
-    "tabFincasAlt": "Farm and field management in AgriDron",
+    "tabFincasAlt": "Farm management in AgriDron",
+
+    "tabParcelas": "Plots",
+    "tabParcelasTitle": "Boundary mapping",
+    "tabParcelasDesc": "Draw your plot polygons on the satellite map and know their exact dimensions before arriving in the field.",
+    "tabParcelasCta": "Go to Plots",
+    "tabParcelasAlt": "Plot management on a satellite map in AgriDron",
+
+    "tabCultivos": "Crops",
+    "tabCultivosTitle": "Crop tracking",
+    "tabCultivosDesc": "Link each plot to its crop and keep track of what is planted in every lot.",
+    "tabCultivosCta": "Go to Crops",
+    "tabCultivosAlt": "Crop management in AgriDron",
+
     "tabMisiones": "Flight Planning",
     "tabMisionesTitle": "Safe drone missions",
-    "tabMisionesDesc": "Schedule spraying flights step-by-step: select parcels, verify meteorological conditions, and specify agricultural inputs with precision.",
+    "tabMisionesDesc": "Schedule spraying flights step by step: select the plot, validate the weather forecast and define agricultural supplies precisely.",
     "tabMisionesCta": "Go to Missions",
-    "tabMisionesAlt": "Agricultural spraying mission planning"
+    "tabMisionesAlt": "Spraying mission planning",
+
+    "tabAreas": "Spraying Areas",
+    "tabAreasTitle": "Defined application zones",
+    "tabAreasDesc": "Define the exact areas to spray within each plot to apply only where needed and avoid wasting supplies.",
+    "tabAreasCta": "Go to Spraying Areas",
+    "tabAreasAlt": "Spraying areas in AgriDron",
+
+    "tabReportes": "Reports",
+    "tabReportesTitle": "Traceability for every operation",
+    "tabReportesDesc": "Review indicators and reports from completed missions: treated hectares, applied supplies and results per plot.",
+    "tabReportesCta": "View Reports",
+    "tabReportesAlt": "Operation reports in AgriDron",
+
+    "tabDrones": "Drones",
+    "tabDronesTitle": "Your fleet under control",
+    "tabDronesDesc": "Register your drones, check their capacity and operational status, and keep their availability up to date for every season.",
+    "tabDronesCta": "Go to Drones",
+    "tabDronesAlt": "Drone management in AgriDron",
+
+    "tabAgroquimicos": "Agrochemicals",
+    "tabAgroquimicosTitle": "Supplies inventory",
+    "tabAgroquimicosDesc": "Check available agrochemicals, their quantities and characteristics before planning each application.",
+    "tabAgroquimicosCta": "Go to Agrochemicals",
+    "tabAgroquimicosAlt": "Agrochemicals inventory in AgriDron",
+
+    "tabPerfil": "Profile",
+    "tabPerfilTitle": "Your account, your way",
+    "tabPerfilDesc": "Manage your personal data, your role on the platform and your account settings.",
+    "tabPerfilCta": "Go to Profile",
+    "tabPerfilAlt": "User profile in AgriDron"
   },
   "steps": {
     "title": "How it works",

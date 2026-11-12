@@ -43,21 +43,66 @@
     "title": "Conoce AgriDron por dentro",
     "description": "Explora las vistas de la aplicación web conectada a nuestra arquitectura de servicios. Diseñada para operar en campo o desde oficina.",
     "tabsLabel": "Vistas de la plataforma",
+
     "tabDashboard": "Dashboard Operativo",
     "tabDashboardTitle": "Panel de control integral",
     "tabDashboardDesc": "Visualiza fincas registradas, hectáreas totales, misiones en curso y las condiciones climáticas en tiempo real para tomar decisiones inmediatas.",
     "tabDashboardCta": "Abrir Dashboard",
     "tabDashboardAlt": "Dashboard de operaciones de AgriDron",
-    "tabFincas": "Gestión de Fincas y Parcelas",
-    "tabFincasTitle": "Delimitación y mapeo cartográfico",
-    "tabFincasDesc": "Registra tus predios y dibuja polígonos sobre el mapa satelital. Administra lotes de cultivo y supervisa las dimensiones exactas de tus parcelas.",
+
+    "tabFincas": "Fincas",
+    "tabFincasTitle": "Registro de fincas",
+    "tabFincasDesc": "Registra tus predios con su ubicación y datos generales para organizar todas tus operaciones desde un solo lugar.",
     "tabFincasCta": "Ir a Fincas",
-    "tabFincasAlt": "Gestión de fincas y parcelas en AgriDron",
+    "tabFincasAlt": "Gestión de fincas en AgriDron",
+
+    "tabParcelas": "Parcelas",
+    "tabParcelasTitle": "Delimitación y mapeo cartográfico",
+    "tabParcelasDesc": "Dibuja los polígonos de tus parcelas sobre el mapa satelital y conoce sus dimensiones exactas antes de llegar al campo.",
+    "tabParcelasCta": "Ir a Parcelas",
+    "tabParcelasAlt": "Gestión de parcelas sobre mapa satelital en AgriDron",
+
+    "tabCultivos": "Cultivos",
+    "tabCultivosTitle": "Seguimiento de cultivos",
+    "tabCultivosDesc": "Asocia cada parcela con su cultivo y lleva el control de lo que se siembra en cada lote.",
+    "tabCultivosCta": "Ir a Cultivos",
+    "tabCultivosAlt": "Gestión de cultivos en AgriDron",
+
     "tabMisiones": "Planificación de Vuelos",
     "tabMisionesTitle": "Misiones seguras con drones",
     "tabMisionesDesc": "Programa vuelos de fumigación paso a paso: selecciona la parcela, valida el pronóstico meteorológico y define los insumos agrícolas con precisión.",
     "tabMisionesCta": "Ir a Misiones",
-    "tabMisionesAlt": "Planificación de misiones de fumigación"
+    "tabMisionesAlt": "Planificación de misiones de fumigación",
+
+    "tabAreas": "Áreas de Fumigación",
+    "tabAreasTitle": "Zonas de aplicación definidas",
+    "tabAreasDesc": "Define las áreas exactas a fumigar dentro de cada parcela para aplicar solo donde se necesita y evitar desperdicio de insumos.",
+    "tabAreasCta": "Ir a Áreas de Fumigación",
+    "tabAreasAlt": "Áreas de fumigación en AgriDron",
+
+    "tabReportes": "Reportes",
+    "tabReportesTitle": "Trazabilidad de cada operación",
+    "tabReportesDesc": "Revisa indicadores y reportes de las misiones realizadas: hectáreas tratadas, insumos aplicados y resultados por parcela.",
+    "tabReportesCta": "Ver Reportes",
+    "tabReportesAlt": "Reportes de operaciones en AgriDron",
+
+    "tabDrones": "Drones",
+    "tabDronesTitle": "Tu flota bajo control",
+    "tabDronesDesc": "Registra tus drones, revisa su capacidad y estado operativo, y mantén al día su disponibilidad para cada campaña.",
+    "tabDronesCta": "Ir a Drones",
+    "tabDronesAlt": "Gestión de drones en AgriDron",
+
+    "tabAgroquimicos": "Agroquímicos",
+    "tabAgroquimicosTitle": "Inventario de insumos",
+    "tabAgroquimicosDesc": "Consulta los agroquímicos disponibles, sus cantidades y características antes de planificar cada aplicación.",
+    "tabAgroquimicosCta": "Ir a Agroquímicos",
+    "tabAgroquimicosAlt": "Inventario de agroquímicos en AgriDron",
+
+    "tabPerfil": "Perfil",
+    "tabPerfilTitle": "Tu cuenta, a tu medida",
+    "tabPerfilDesc": "Gestiona tus datos personales, tu rol en la plataforma y la configuración de tu cuenta.",
+    "tabPerfilCta": "Ir a Perfil",
+    "tabPerfilAlt": "Perfil de usuario en AgriDron"
   },
   "steps": {
     "title": "Cómo funciona",
