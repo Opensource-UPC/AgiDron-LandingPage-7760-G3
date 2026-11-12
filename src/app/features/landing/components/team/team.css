@@ -63,6 +63,14 @@
   background: linear-gradient(135deg, #e7e4de, #c4b7a7);
   overflow: hidden;
 }
+.member-avatar img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 .member-avatar::before {
   content: "";
